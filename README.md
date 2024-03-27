@@ -40,5 +40,3 @@ Where:
 With different `partition_method` parameters, you can obtain different degrees of data imbalance distribution to test the robustness of the algorithm.
 
 Make sure to replace the paths in the commands with your own configuration file paths.
-
-This README file briefly introduces how to generate dataset distributions and launch the FedSDC and FedSDC-$\omega$ federated learning algorithms. If you have any other questions, feel free to inquire.
