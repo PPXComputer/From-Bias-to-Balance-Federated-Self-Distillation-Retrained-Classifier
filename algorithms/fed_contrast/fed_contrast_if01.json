@@ -1,0 +1,54 @@
+{
+  "data_setups": {
+    "root": "./data",
+    "dataset_name": "cifar10",
+    "batch_size": 32,
+    "n_clients": 20,
+    "partition": {
+      "method": "if_01",
+      "shard_per_user": 2
+    }
+  },
+  "train_setups": {
+    "algo": {
+      "name": "fed_contrast",
+      "params": {
+        "lam1": 3,
+        "lam2": 1,
+        "dataset_name": "cifar10",
+        "epoch_classifier": 10
+      }
+    },
+    "scenario": {
+      "n_rounds": 200,
+      "sample_ratio": 0.4,
+      "local_epochs": 10,
+      "device": "cuda"
+    },
+    "model": {
+      "name": "double_resnet8",
+      "params": {}
+    },
+    "optimizer": {
+      "params": {
+        "lr": 0.1,
+        "momentum": 0,
+        "weight_decay": 0
+      }
+    },
+    "scheduler": {
+      "enabled": true,
+      "name": "step",
+      "params": {
+        "gamma": 1,
+        "step_size": 1
+      }
+    },
+    "seed": 7
+  },
+  "wandb_setups": {
+    "project": "NeurIPS2022",
+    "group": "fed_contrast",
+    "name": "fed_contrast"
+  }
+}
