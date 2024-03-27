@@ -33,28 +33,8 @@ torch.set_printoptions(10)
 
 ALGO = {
     "fedavg": algorithms.fedavg.Server,
-    "fedcurv": algorithms.fedcurv.Server,
-    "fedprox": algorithms.fedprox.Server,
-    "fedavgm": algorithms.fedavgm.Server,
-    "fedntd": algorithms.fedntd.Server,
-    "fednova": algorithms.fednova.Server,
-    "scaffold": algorithms.scaffold.Server,
-    "moon": algorithms.moon.Server,
-    "feddyn": algorithms.feddyn.Server,
-    "fed_focal": algorithms.fed_focal_loss.Server,
-    "fed_ghmc": algorithms.fed_ghmc_loss.Server,
-    "fed_ratio": algorithms.fed_ratio_loss.Server,
     "fed_contrast": algorithms.fed_contrast.Server,
-    "fed_random_contrast": algorithms.fed_random_contrast.Server,
-    "fed_classifier": algorithms.fed_classifier.Server,
-    "fed_double_ce": algorithms.fed_double_ce.Server,
-    "fed_reverse_classifier": algorithms.fed_reverse_classifier.Server,
-    "fed_normal_classifier": algorithms.fed_normal_classifier.Server,
-    "fed_kl_classifier": algorithms.fed_kl_classifier.Server,
-    "fed_imbalance_loss": algorithms.fed_imbalance_loss.Server,
-    "fed_babu": algorithms.fed_babu.Server,
-    'fed_contrast_balancedkd': algorithms.fed_contrast_balancedkd.Server,
-    'fed_contrast_local_send': algorithms.fed_contrast_local_send.Server
+    "fed_classifier": algorithms.fed_classifier.Server
 }
 
 SCHEDULER = {
