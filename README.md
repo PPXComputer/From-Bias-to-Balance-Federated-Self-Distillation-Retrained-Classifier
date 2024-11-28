@@ -35,7 +35,7 @@ Where:
 - `--partition_method` specifies the data partitioning method
   - `if_01` indicates an imbalance factor of 10
   - `if_001` indicates an imbalance factor of 100
-  - `if_002` indicates a balance factor of 50
+  - `if_002` indicates an imbalance factor of 50
 
 With different `partition_method` parameters, you can obtain different degrees of data imbalance distribution to test the robustness of the algorithm.
 
